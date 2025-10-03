@@ -4,6 +4,7 @@ import axios from "axios";
 const apiClint = axios.create({
   baseURL: "http://api.weatherapi.com/v1",
   timeout: 5000,
+  headers: { "Content-Type": "application/json" },
 });
 
 apiClint.interceptors.request.use(null, async (error) => {
