@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import axios from "axios";
 
 const apiClint = axios.create({
-  baseURL: "http://api.weatherapi.com/v1",
+  baseURL: "https://api.weatherapi.com/v1",
   timeout: 5000,
   headers: { "Content-Type": "application/json" },
 });
